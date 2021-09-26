@@ -1,20 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
 
-function Section() {
+function Section({title,description,leftBtnText,rightBtnText}) {
   return (
     <Wrap>
       <ItemText>
-        <h1>The Podcast</h1>
-        <p>Listen on all platforms </p>
+        <h1>{title}</h1>
+        <p>{description}</p>
       </ItemText>
       <Buttons>
         <ButtonGroup>
           <LeftButton>
-            Latest Episode
+            {leftBtnText}
           </LeftButton>
           <RightButton>
-            Archives
+            {rightBtnText}
           </RightButton>
         </ButtonGroup>
         <DownArrow src='/images/down-arrow.svg'/>
@@ -50,10 +50,13 @@ const ItemText = styled.div`
 `
 const ButtonGroup = styled.div`
   display: flex;
+  margin-bottom: 30px;
+  @media (max-width: 768px){
+    flex-direction: column;
+  }
 `
 const LeftButton = styled.div`
   background-color: rgba(23, 26, 32, 0.8);
-  background-blend-mode: difference;
   height: 40px;
   width: 256px;
   color: white;
@@ -67,6 +70,9 @@ const LeftButton = styled.div`
   margin: 20px;
 `
 const RightButton = styled(LeftButton)`
+background-color: white;
+opacity: 0.65;
+color: black;
 
 `
 const DownArrow = styled.img`

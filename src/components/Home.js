@@ -5,6 +5,16 @@ import Section from './Section'
 function Home() {
   return (
     <Container>
+      <Section
+        title="TUF Podcast"
+        description = "Listen on all platforms"
+        backgroundImg='war.jpg'
+        rightBtnText='Archives'
+        leftBtnText='Latest Episode'
+        />
+      <Section />
+      <Section />
+      <Section />
       <Section />
     </Container>
   )
