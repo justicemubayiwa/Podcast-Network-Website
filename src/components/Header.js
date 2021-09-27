@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import styled from 'styled-components'
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
-import { selectChannels } from '../features/channel/channelSlice'
+import channelSlice, { selectChannels } from '../features/channel/channelSlice'
 import { useSelector } from 'react-redux'
 
 function Header() {
@@ -16,9 +16,7 @@ function Header() {
         <img id="logo" src='/images/sculture white transparent.png'/>
       </a>
       <Menu>
-        {channels && channels.map((channel, index) =>{
-              <a key={index} href="#">{channel}</a>
-        })}
+        {channels && channels.map((car, index)=>(<a key={index} href="#">{car}</a>))}
 
       </Menu>
       <RightMenu>
@@ -31,10 +29,7 @@ function Header() {
         <CloseWraper>
           <CustomClose onClick={()=>setBurgerStatus(false)} />
         </CloseWraper>
-        {channels && channels.map((channel, index) =>{
-              <li key={index}><a href ="#">{channel}</a></li>
-        })}
-        
+        <li><a href ="#">Store</a></li>
         <li><a href ="#">Calender</a></li>
         <li><a href ="#">Reading List</a></li>
         <li><a href ="#">Network</a></li>
