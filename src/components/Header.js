@@ -20,7 +20,7 @@ function Header() {
 
       </Menu>
       <RightMenu>
-        <a href="#">Podcasts</a>
+        <a href="#">Shop</a>
         <a href="#">Blog</a>
         <a href="#">Account</a>
         <CustomMenu onClick={()=>setBurgerStatus(true)} />
