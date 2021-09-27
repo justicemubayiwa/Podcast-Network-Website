@@ -2,20 +2,23 @@ import React, {useState} from 'react'
 import styled from 'styled-components'
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
+import { selectChannels } from '../features/channel/channelSlice'
+import { useSelector } from 'react-redux'
 
 function Header() {
-  const [burgerStatus, setBurgerStatus] = useState(false);
+  const [burgerStatus, setBurgerStatus] = useState
+  (false);
+  const channels = useSelector(selectChannels)
+  console.log(channels)
   return (
     <Container>
       <a>
         <img id="logo" src='/images/sculture white transparent.png'/>
       </a>
       <Menu>
-        <a href="#">Home</a>
-        <a href="#">Tech</a>
-        <a href="#">Sports</a>
-        <a href="#">Music</a>
-        <a href="#">News</a>
+        {channels && channels.map((channel, index) =>{
+              <a key={index} href="#">{channel}</a>
+        })}
 
       </Menu>
       <RightMenu>
