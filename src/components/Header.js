@@ -52,6 +52,8 @@ const Container = styled.div`
   left: 0;
   right: 0;
   z-index: 1;
+  letter-spacing: 5px;
+  background-color: rgba(0,0,0, 0.2)
 `
 
 const Menu = styled.div`
@@ -62,8 +64,9 @@ const Menu = styled.div`
   
   a {
     font-weight: 600;
+    font-size: 18px;
     text-transform: uppercase;
-    padding: 0 10px;
+    padding: 0 20px;
     flex-wrap: no - wrap;
   }
 
@@ -80,6 +83,10 @@ const RightMenu = styled.div`
     margin-right: 10px;
     padding-right: 6px;
     flex-wrap: no - wrap;
+    cursor: pointer;
+  }
+  a:hover {
+    color: #E0B115;
   }
 `
 
@@ -108,6 +115,7 @@ const BurgerNav = styled.div`
 
     a {
       font-weight: 900;
+      cursor: pointer;
     }
   }
   

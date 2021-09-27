@@ -52,10 +52,15 @@ const Wrap = styled.div `
   background-image: ${props => `url("/images/${props.bgImage}")`}
 
 `
+
+
 const ItemText = styled.div`
   padding-top: 15vh;
   text-align: center;
+  position: relative;
+  z-index: 2; 
 `
+
 const ButtonGroup = styled.div`
   display: flex;
   margin-bottom: 30px;
@@ -76,6 +81,7 @@ const LeftButton = styled.div`
   text-transform: uppercase;
   font-size: 12px;
   margin: 20px;
+  cursor: pointer;
 `
 const RightButton = styled(LeftButton)`
 background-color: white;
