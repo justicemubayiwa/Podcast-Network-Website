@@ -8,36 +8,36 @@ function Home() {
     <Container>
       <Section
         title="Sculture"
-        description = 'For the overwhelming minority'
-        backgroundImg='dark pyramids.jpg'
+        description = 'Spark New Inspirations.'
+        backgroundImg='turtle.jpg'
         rightBtnText='Latest Episode'
         leftBtnText='Archives'
       />
       <Section
         title="Technology"
         description = ""
-        backgroundImg='astro.jpg'
+        backgroundImg='rover.jpg'
         rightBtnText='Updates'
         leftBtnText='Commentary'
       />
       <Section 
         title="Sports"
         description = ""
-        backgroundImg='boxing dodge.jpg'
+        backgroundImg='fence.jpg'
         rightBtnText='Podcasts'
         leftBtnText='Stats' 
       />
       <Section 
         title="Music"
         description = ""
-        backgroundImg='piano hands.jpg'
+        backgroundImg='chip.jpg'
         rightBtnText='Radar'
         leftBtnText='Playlists' 
       />
       <Section
-        title="History"
+        title="Politics"
         description = ""
-        backgroundImg='dino.jpg'
+        backgroundImg='fall.jpg'
         leftBtnText='Library'
       />
       
