@@ -36,6 +36,7 @@ function Section({title,description,leftBtnText,rightBtnText, backgroundImg}) {
 export default Section
 
 const Wrap = styled.div `
+  z-index: 10;
   width: 100vw;
   height: 100vh;
   background: red;
@@ -48,7 +49,6 @@ const Wrap = styled.div `
   justify-content: space-between;
   align-items: center;
   font-size: 12px;
-  cursor: pointer;
   background-image: ${props => `url("/images/${props.bgImage}")`}
 
 `
