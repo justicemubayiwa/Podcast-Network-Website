@@ -31,7 +31,10 @@ function Header() {
         <CloseWraper>
           <CustomClose onClick={()=>setBurgerStatus(false)} />
         </CloseWraper>
-        <li><a href ="#">Store</a></li>
+        {channels && channels.map((channel, index) =>{
+              <li key={index}><a href ="#">{channel}</a></li>
+        })}
+        
         <li><a href ="#">Calender</a></li>
         <li><a href ="#">Reading List</a></li>
         <li><a href ="#">Network</a></li>
