@@ -30,6 +30,10 @@ p {
   font-size: 24px;
   font-family: 'Rajdhani', sans-serif;
   letter-spacing: 5px;
+  color: #E0B115;
+  font-weight: 800;
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 10px;
 }
 
 #logo{

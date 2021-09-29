@@ -8,13 +8,15 @@ function Home() {
     <Container>
       <Section
         title="Sculture"
-        description = 'Spark New Inspirations.'
-        backgroundImg='turtle.jpg'
+        id="Sculture"
+        description = 'PULSE OF THE CULTURE'
+        backgroundImg='bear.jpg'
         rightBtnText='Latest Episode'
         leftBtnText='Archives'
       />
       <Section
         title="Technology"
+        id="Technology"
         description = ""
         backgroundImg='rover.jpg'
         rightBtnText='Updates'
@@ -22,6 +24,7 @@ function Home() {
       />
       <Section 
         title="Sports"
+        id = 'Sports'
         description = ""
         backgroundImg='fence.jpg'
         rightBtnText='Podcasts'
@@ -29,6 +32,7 @@ function Home() {
       />
       <Section 
         title="Music"
+        id = 'Music'
         description = ""
         backgroundImg='chip.jpg'
         rightBtnText='Radar'
@@ -36,6 +40,7 @@ function Home() {
       />
       <Section
         title="Politics"
+        id = 'Politics'
         description = ""
         backgroundImg='fall.jpg'
         leftBtnText='Library'

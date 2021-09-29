@@ -7,7 +7,7 @@ function Section({title,description,leftBtnText,rightBtnText, backgroundImg}) {
     <Wrap bgImage={backgroundImg}>
       <Fade top >
         <ItemText>
-          <h1>{title}</h1>
+          <h1 id={title}>{title}</h1>
           <p>{description}</p>
         </ItemText>
       </Fade>
@@ -72,21 +72,25 @@ const LeftButton = styled.div`
   background-color: rgba(23, 26, 32, 0.8);
   height: 40px;
   width: 256px;
-  color: white;
+  color: #E0B115;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 100px;
-  opacity: 0.85;
+  opacity: 0.75;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 16px;
+  font-weight; bold;
+  letter-spacing: 5px;
   margin: 20px;
   cursor: pointer;
+
 `
 const RightButton = styled(LeftButton)`
-background-color: white;
-opacity: 0.65;
+background-color: #E0B115;
+opacity: 0.9;
 color: black;
+
 
 `
 const DownArrow = styled.img`

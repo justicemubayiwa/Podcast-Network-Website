@@ -16,7 +16,7 @@ function Header() {
         <img id="logo" src='/images/sculture white transparent.png'/>
       </a>
       <Menu>
-        {channels && channels.map((channel, index)=>(<a key={index} href="#">{channel}</a>))}
+        {channels && channels.map((channel, index)=>(<a key={index} href={`#${channel}`}>{channel}</a>))}
 
       </Menu>
       <RightMenu>
@@ -29,7 +29,7 @@ function Header() {
         <CloseWraper>
           <CustomClose onClick={()=>setBurgerStatus(false)} />
         </CloseWraper>
-        {channels && channels.map((channel, index)=>(<li key={index}><a href ="#">{channel}</a></li>))}
+        {channels && channels.map((channel, index)=>(<li key={index}><a href={`#${channel}`}>{channel}</a></li>))}
         <li><a href ="#">Store</a></li>
         <li><a href ="#">Calender</a></li>
         <li><a href ="#">Contact</a></li>
@@ -68,6 +68,11 @@ const Menu = styled.div`
     text-transform: uppercase;
     padding: 0 20px;
     flex-wrap: no - wrap;
+  }
+
+  a:hover {
+    cursor: pointer;
+    color: #E0B115;
   }
 
   @media(max-width: 768px){
@@ -111,6 +116,9 @@ const BurgerNav = styled.div`
   li {
     padding: 15px 0;
     border-bottom: 1px solid rgba(250, 250, 250, 0.2)
+  }
+  a:hover {
+    color: #E0B115;
   }
 
     a {
